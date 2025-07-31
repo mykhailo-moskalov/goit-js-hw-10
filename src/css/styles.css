@@ -2,63 +2,9 @@
 @import url('./base.css');
 @import url('./container.css');
 
-a[href='./index.html'],
-a[href='./1-timer.html'],
-a[href='./2-snackbar.html'] {
-  display: block;
-
-  margin-bottom: 48px;
-
-  font-size: 24px;
-}
-
 /* TIMER */
 #datetime-picker {
-  border: 1px solid #808080;
-  border-radius: 4px;
-  padding: 8px 16px;
-
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.04em;
-  color: #2e2f42;
-
   margin-right: 8px;
-}
-#datetime-picker:hover {
-  border-color: #000;
-}
-#datetime-picker:active {
-  border-color: #4e75ff;
-}
-#datetime-picker:disabled {
-  border-color: #808080;
-  background-color: #fafafa;
-  color: #808080;
-}
-
-[data-start] {
-  border-radius: 8px;
-  padding: 8px 16px;
-  background: #4e75ff;
-  border: none;
-
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.04em;
-  color: #fff;
-}
-[data-start]:hover,
-[data-start]:focus {
-  background: #6c8cff;
-}
-[data-start]:disabled {
-  background: #cfcfcf;
-  color: #989898;
-
-  cursor: not-allowed;
 }
 
 .timer {
@@ -81,12 +27,46 @@ a[href='./2-snackbar.html'] {
 .label {
   display: block;
 
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
-  color: #2e2f42;
-
   text-transform: uppercase;
   text-align: center;
 }
 /* TIMER */
+/* SNACKBAR */
+.form {
+  width: fit-content;
+}
+
+.form label:nth-child(1) {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+
+  margin-bottom: 16px;
+}
+
+input[type='number'] {
+  width: 360px;
+  height: 40px;
+}
+
+.form fieldset {
+  width: 360px;
+  border-radius: 4px;
+  stroke-width: 1px;
+  stroke: #808080;
+
+  margin-bottom: 24px;
+  padding: 24px 48px 8px;
+
+  display: flex;
+  gap: 48px;
+}
+
+.form legend {
+  padding: 0 4px;
+}
+
+button[type='submit'] {
+  width: 100%;
+}
+/* SNACKBAR */
