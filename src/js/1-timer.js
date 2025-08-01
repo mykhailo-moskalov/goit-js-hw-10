@@ -54,6 +54,7 @@ startBtn.addEventListener('click', () => {
         message: 'Countdown complete!',
         position: 'topRight',
       });
+      document.querySelector('input#datetime-picker').disabled = false;
       return;
     }
 
